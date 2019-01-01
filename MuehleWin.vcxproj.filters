@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="miniMax">
+      <UniqueIdentifier>{02407604-9712-4590-8305-503b299a2ce8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyLibrary">
+      <UniqueIdentifier>{b5704789-5924-4dec-bc39-bcbe5c083470}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectXTK">
+      <UniqueIdentifier>{65e58215-767a-4d6f-bed4-ab9fbe85074f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="wildWeasel">
+      <UniqueIdentifier>{c5c4cad3-62dc-4219-bc1c-c236de8d1517}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="sourcecode\MuehleWin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcecode\resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Muehle\sourcecode\minMaxKI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Muehle\sourcecode\muehle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Muehle\sourcecode\muehleKI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Muehle\sourcecode\perfectKI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Muehle\sourcecode\randomKI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcecode\millField2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WeaselLibrary\miniMax\miniMax.h">
+      <Filter>miniMax</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WeaselLibrary\miniMax\miniMax_retroAnalysis.h">
+      <Filter>miniMax</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WeaselLibrary\miniMax\miniMaxWin.h">
+      <Filter>miniMax</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WeaselLibrary\DirectXTK11\DeviceResources.h">
+      <Filter>DirectXTK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WeaselLibrary\DirectXTK11\pch.h">
+      <Filter>DirectXTK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WeaselLibrary\DirectXTK11\StepTimer.h">
+      <Filter>DirectXTK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WeaselLibrary\bufferedFile.h">
+      <Filter>MyLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WeaselLibrary\cyclicArray.h">
+      <Filter>MyLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WeaselLibrary\strLib.h">
+      <Filter>MyLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WeaselLibrary\threadManager.h">
+      <Filter>MyLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WeaselLibrary\xml.h">
+      <Filter>MyLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WeaselLibrary\wildWeasel\wildWeasel.h">
+      <Filter>wildWeasel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WeaselLibrary\wildWeasel\wwAlignment.h">
+      <Filter>wildWeasel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WeaselLibrary\wildWeasel\wwAnimation.h">
+      <Filter>wildWeasel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WeaselLibrary\wildWeasel\wwEditField.h">
+      <Filter>wildWeasel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WeaselLibrary\wildWeasel\wwListView.h">
+      <Filter>wildWeasel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WeaselLibrary\wildWeasel\wwRotCtrlCube.h">
+      <Filter>wildWeasel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WeaselLibrary\wildWeasel\wwTreeView.h">
+      <Filter>wildWeasel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WeaselLibrary\wildWeasel\ww3D.h">
+      <Filter>wildWeasel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WeaselLibrary\wildWeasel\wwExamples.h">
+      <Filter>wildWeasel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WeaselLibrary\wildWeasel\wwFlipbook.h">
+      <Filter>wildWeasel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WeaselLibrary\wildWeasel\wwGuiElement.h">
+      <Filter>wildWeasel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WeaselLibrary\wildWeasel\wwMasterMind.h">
+      <Filter>wildWeasel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WeaselLibrary\wildWeasel\ssf_DXTK11\wwSsf.h">
+      <Filter>wildWeasel</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sourcecode\MuehleWin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Muehle\sourcecode\minMaxKI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Muehle\sourcecode\muehle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Muehle\sourcecode\muehleKI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Muehle\sourcecode\perfectKI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Muehle\sourcecode\randomKI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sourcecode\millField2D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WeaselLibrary\miniMax\miniMax.cpp">
+      <Filter>miniMax</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WeaselLibrary\miniMax\miniMax_alphaBetaAlgorithmn.cpp">
+      <Filter>miniMax</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WeaselLibrary\miniMax\miniMax_database.cpp">
+      <Filter>miniMax</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WeaselLibrary\miniMax\miniMax_retroAnalysis.cpp">
+      <Filter>miniMax</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WeaselLibrary\miniMax\miniMax_statistics.cpp">
+      <Filter>miniMax</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WeaselLibrary\miniMax\miniMax_test.cpp">
+      <Filter>miniMax</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WeaselLibrary\miniMax\miniMaxWinCalcDb.cpp">
+      <Filter>miniMax</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WeaselLibrary\miniMax\miniMaxWinInspectDb.cpp">
+      <Filter>miniMax</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WeaselLibrary\DirectXTK11\DeviceResources.cpp">
+      <Filter>DirectXTK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WeaselLibrary\DirectXTK11\pch.cpp">
+      <Filter>DirectXTK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WeaselLibrary\bufferedFile.cpp">
+      <Filter>MyLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WeaselLibrary\cyclicArray.cpp">
+      <Filter>MyLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WeaselLibrary\strLib.cpp">
+      <Filter>MyLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WeaselLibrary\threadManager.cpp">
+      <Filter>MyLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WeaselLibrary\xml.cpp">
+      <Filter>MyLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WeaselLibrary\wildWeasel\wildWeasel.cpp">
+      <Filter>wildWeasel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WeaselLibrary\wildWeasel\ww3D.cpp">
+      <Filter>wildWeasel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WeaselLibrary\wildWeasel\wwAlignment.cpp">
+      <Filter>wildWeasel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WeaselLibrary\wildWeasel\wwAnimation.cpp">
+      <Filter>wildWeasel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WeaselLibrary\wildWeasel\wwEditField.cpp">
+      <Filter>wildWeasel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WeaselLibrary\wildWeasel\wwExamples.cpp">
+      <Filter>wildWeasel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WeaselLibrary\wildWeasel\wwFlipBook.cpp">
+      <Filter>wildWeasel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WeaselLibrary\wildWeasel\wwGuiElement.cpp">
+      <Filter>wildWeasel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WeaselLibrary\wildWeasel\wwListView.cpp">
+      <Filter>wildWeasel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WeaselLibrary\wildWeasel\wwRotCtrlCube.cpp">
+      <Filter>wildWeasel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WeaselLibrary\wildWeasel\wwTreeView.cpp">
+      <Filter>wildWeasel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WeaselLibrary\wildWeasel\wwMasterMind.cpp">
+      <Filter>wildWeasel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WeaselLibrary\wildWeasel\ssf_DXTK11\wwSsf.cpp">
+      <Filter>wildWeasel</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="sourcecode\MuehleWin.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

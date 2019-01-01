@@ -50,7 +50,7 @@ January 1, 2019 - First release.
 - Install GitHub Extension for Visual Studio (if no other github tool is already installed)
 - Clone the [DirectXTK 11 git repository](https://github.com/Microsoft/DirectXTK)
 - Clone this repositority
-- Clone the library repository [weaselLibrary](https://github.com/madweasel/madweasels-cpp)
+- Clone the library repository [weaselLibrary](https://github.com/madweasel/weaselLibrary)
 - Open the project via the .sln file (MuehleWin.sln)
 - Compile and run
 
@@ -62,4 +62,4 @@ Contact: [karaizy@mad-weasel.de](mailto:karaizy@mad-weasel.de).
 # License
 Copyright (c) Thomas Weber. All rights reserved.
 
-Licensed under the [MIT](LICENSE.txt) License.
+Licensed under the [MIT](LICENSE) License.
