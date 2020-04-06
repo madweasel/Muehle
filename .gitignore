@@ -292,3 +292,4 @@ __pycache__/
 /settings.xml
 *.iobj
 *.ipdb
+*.exe
