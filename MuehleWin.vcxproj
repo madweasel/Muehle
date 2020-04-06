@@ -14,7 +14,7 @@
     <ProjectGuid>{FFEE0678-F32C-4EB4-97EB-E562F4E60733}</ProjectGuid>
     <RootNamespace>MuehleWin</RootNamespace>
     <Keyword>Win32Proj</Keyword>
-    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
@@ -53,7 +53,7 @@
     <OutDir>$(SolutionDir)</OutDir>
     <IntDir>$(USERPROFILE)\Visual Studio Temp\$(SolutionName)\$(ProjectName)\$(ConfigurationName)</IntDir>
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>$(SolutionDir)..\weaselLibrary\wildWeasel\ssf_DXTK11;$(SolutionDir)..\weaselLibrary;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)..\DirectXTK\Inc;$(SolutionDir)..\weaselLibrary\wildWeasel\ssf_DXTK11;$(SolutionDir)..\weaselLibrary;$(IncludePath)</IncludePath>
     <EnableManagedIncrementalBuild>true</EnableManagedIncrementalBuild>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -62,7 +62,7 @@
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>C:\Coding\External Libraries\DirectXTK11\Inc</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\DirectXTK\Inc</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -91,7 +91,7 @@
       <PrecompiledHeader />
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <AdditionalIncludeDirectories>C:\Coding\External Libraries\DirectXTK11\Inc</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\DirectXTK\Inc</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -180,7 +180,7 @@
     <ResourceCompile Include="sourcecode\MuehleWin.rc" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\External Libraries\DirectXTK11\DirectXTK_Desktop_2017.vcxproj">
+    <ProjectReference Include="..\DirectXTK\DirectXTK_Desktop_2017.vcxproj">
       <Project>{e0b52ae7-e160-4d32-bf3f-910b785e5a8e}</Project>
     </ProjectReference>
   </ItemGroup>
