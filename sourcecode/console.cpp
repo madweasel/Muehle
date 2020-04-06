@@ -77,12 +77,12 @@ void main(void)
 						
 					// get input
 					cin >> tmpChar;
-					if ((tmpChar[0] >= 'a') && (tmpChar[0] <= 'x'))		pushFrom	= tmpChar[0] - 97;	else pushFrom	= fieldStruct::size;
+					if ((tmpChar[0] >= 'a') && (tmpChar[0] <= 'x'))		pushFrom	= tmpChar[0] - 'a';	else pushFrom	= fieldStruct::size;
 					
 					if (myGame->inSettingPhase()) {
-						if ((tmpChar[0] >= 'a') && (tmpChar[0] <= 'x'))	pushTo		= tmpChar[0] - 97;	else pushTo		= fieldStruct::size;
+						if ((tmpChar[0] >= 'a') && (tmpChar[0] <= 'x'))	pushTo		= tmpChar[0] - 'a';	else pushTo		= fieldStruct::size;
 					} else {
-						if ((tmpChar[1] >= 'a') && (tmpChar[1] <= 'x'))	pushTo		= tmpChar[1] - 97;	else pushTo		= fieldStruct::size;
+						if ((tmpChar[1] >= 'a') && (tmpChar[1] <= 'x'))	pushTo		= tmpChar[1] - 'a';	else pushTo		= fieldStruct::size;
 					}
 
 					// undo
