@@ -11,9 +11,9 @@ using namespace std;
 unsigned int	startTestFromLayer		= 0;
 unsigned int	endTestAtLayer			= NUM_LAYERS-1;
 #ifdef _DEBUG
-	char		databaseDirectory[]		= "D:\\Mühle\\Mühle_Debug";
+	char		databaseDirectory[]		= ".";
 #elif _RELEASE_X64
-	char		databaseDirectory[]		= ""; // "D:\\Mühle\\Mühle_Debug";
+	char		databaseDirectory[]		= "";
 #endif
 bool			calculateDatabase		= true;
 unsigned int	compressionAlgorithmnId	= COMPRESSOR_ALG_UNCOMPRESSED;			// COMPRESSOR_ALG_EASYZLIB | COMPRESSOR_ALG_UNCOMPRESSED
@@ -53,8 +53,8 @@ void main(void)
 
 	} else {
 
-		cout << "Ist Spieler 1 ein Mensch? (j/n):"; cin >> tmpChar;	if (tmpChar[0] == 'j') playerOneHuman = true;
-		cout << "Ist Spieler 2 ein Mensch? (j/n):"; cin >> tmpChar;	if (tmpChar[0] == 'j') playerTwoHuman = true;
+		cout << "Is Player 1 human? (y/n):"; cin >> tmpChar;	if (tmpChar[0] == 'y') playerOneHuman = true;
+		cout << "Is Player 2 human? (y/n):"; cin >> tmpChar;	if (tmpChar[0] == 'y') playerTwoHuman = true;
 
 		// play
 		do
@@ -72,9 +72,9 @@ void main(void)
 			||  (myGame->getCurrentPlayer() == fieldStruct::playerTwo && playerTwoHuman)) {
 				do {
 					// Show text
-					if (myGame->mustStoneBeRemoved())	cout << "\n   Welchen Stein moechten Sie entfernen? [a-x]: \n\n\n";
-					else if (myGame->inSettingPhase())	cout << "\n   Wohin setzen Sie? [a-x]: \n\n\n";
-					else								cout << "\n   Ihr Zug? [a-x][a-x]: \n\n\n";
+					if (myGame->mustStoneBeRemoved())	cout << "\n   Which stone do you want to remove? [a-x]: \n\n\n";
+					else if (myGame->inSettingPhase())	cout << "\n   Where are you going? [a-x]: \n\n\n";
+					else								cout << "\n   Your train? [a-x][a-x]: \n\n\n";
 						
 					// get input
 					cin >> tmpChar;
@@ -114,10 +114,10 @@ void main(void)
 		
 		myGame->printField();
 
-			 if (myGame->getWinner() == fieldStruct::playerOne)	cout << "\n   Spieler 1 (o) hat nach " << myGame->getMovesDone() << " Zuegen gewonnen.\n\n";
-		else if (myGame->getWinner() == fieldStruct::playerTwo)	cout << "\n   Spieler 2 (x) hat nach " << myGame->getMovesDone() << " Zuegen gewonnen.\n\n";
-		else if (myGame->getWinner() == fieldStruct::gameDrawn)	cout << "\n   Unentschieden!\n\n";
-		else												    cout << "\n   Ein Programmfehler ist aufgetreten!\n\n";
+			 if (myGame->getWinner() == fieldStruct::playerOne)	cout << "\n   Player 1 (o) won after " << myGame->getMovesDone() << " move.\n\n";
+		else if (myGame->getWinner() == fieldStruct::playerTwo)	cout << "\n   Player 2 (x) won after " << myGame->getMovesDone() << " move.\n\n";
+		else if (myGame->getWinner() == fieldStruct::gameDrawn)	cout << "\n   Draw!\n\n";
+		else												    cout << "\n   A program error has occurred!\n\n";
 	}
 
 	char end;
