@@ -15,7 +15,7 @@ unsigned int	endTestAtLayer			= NUM_LAYERS-1;
 #elif _RELEASE_X64
 	char		databaseDirectory[]		= "";
 #endif
-bool			calculateDatabase		= true;
+bool			calculateDatabase		= false;
 
 void main(void)
 {
