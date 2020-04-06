@@ -16,7 +16,6 @@ unsigned int	endTestAtLayer			= NUM_LAYERS-1;
 	char		databaseDirectory[]		= "";
 #endif
 bool			calculateDatabase		= true;
-unsigned int	compressionAlgorithmnId	= COMPRESSOR_ALG_UNCOMPRESSED;			// COMPRESSOR_ALG_EASYZLIB | COMPRESSOR_ALG_UNCOMPRESSED
 
 void main(void)
 {
@@ -44,7 +43,7 @@ void main(void)
 	if (calculateDatabase) {
 
 		// calculate
-		myKI->calculateDatabase(MAX_DEPTH_OF_TREE, false, compressionAlgorithmnId);
+		myKI->calculateDatabase(MAX_DEPTH_OF_TREE, false);
 
 		// test database
 		cout << endl << "Begin test starting from layer: ";     startTestFromLayer;
