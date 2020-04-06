@@ -289,6 +289,9 @@ __pycache__/
 /plyInfo.dat
 /preCalculatedVars.dat
 /shortKnotValue.dat
+countArray/
+initLayer/
+statesToProcess/
 /settings.xml
 *.iobj
 *.ipdb
