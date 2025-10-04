@@ -1,0 +1,4 @@
+[submodule "ext/WeaselLibrary"]
+	path = ext/WeaselLibrary
+	url = https://github.com/madweasel/weaselLibrary.git
+	branch = v2.0

@@ -1,0 +1,137 @@
+{
+    "version": 3,
+    "configurePresets": [
+        {
+            "name": "msvc-windows-base",
+            "hidden": true,
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build/${presetName}",
+            "installDir": "${sourceDir}/out/install/${presetName}",
+            "cacheVariables": {
+                "CMAKE_C_COMPILER": "cl.exe",
+                "CMAKE_CXX_COMPILER": "cl.exe",
+                "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
+                "VCPKG_TARGET_TRIPLET": "x64-windows-static-md",
+				"VCPKG_LIBRARY_LINKAGE": "static",
+				"VCPKG_CRT_LINKAGE": "dynamic",
+                "CMAKE_TOOLCHAIN_FILE": {
+                    "value": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+                    "type": "FILEPATH"
+                }
+            },
+            "condition": {
+                "type": "equals",
+                "lhs": "${hostSystemName}",
+                "rhs": "Windows"
+            }
+        },
+        {
+            "name": "msvc-x64-debug",
+            "displayName": "MSVC x64 Debug",
+            "inherits": "msvc-windows-base",
+            "architecture": {
+                "value": "x64",
+                "strategy": "external"
+            },
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+        },
+        {
+            "name": "msvc-x64-release",
+            "displayName": "MSVC x64 Release",
+            "inherits": "msvc-x64-debug",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release"
+            }
+        },
+        {
+            "name": "gcc-windows-base",
+            "hidden": true,
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build/${presetName}",
+            "installDir": "${sourceDir}/out/install/${presetName}",
+            "cacheVariables": {
+                "CMAKE_C_COMPILER": "gcc.exe",
+                "CMAKE_CXX_COMPILER": "g++.exe",
+                "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
+                "VCPKG_TARGET_TRIPLET": "x64-mingw-dynamic",
+                "CMAKE_TOOLCHAIN_FILE": {
+                    "value": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+                    "type": "FILEPATH"
+                }                
+            },
+            "condition": {
+                "type": "equals",
+                "lhs": "${hostSystemName}",
+                "rhs": "Windows"
+            }
+        },
+        {
+            "name": "gcc-x64-debug",
+            "displayName": "GCC x64 Debug",
+            "inherits": "gcc-windows-base",
+            "architecture": {
+                "value": "x64",
+                "strategy": "external"
+            },
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+        },
+        {
+            "name": "gcc-x64-release",
+            "displayName": "GCC x64 Release",
+            "inherits": "gcc-x64-debug",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "msvc-windows-base",
+            "hidden": true,
+            "configurePreset": "msvc-windows-base"
+        },
+        {
+            "name": "msvc-x64-debug",
+            "displayName": "MSVC x64 Debug",
+            "configurePreset": "msvc-x64-debug"
+        },
+        {
+            "name": "msvc-x64-release",
+            "displayName": "MSVC x64 Release",
+            "configurePreset": "msvc-x64-release"
+        },
+        {
+            "name": "gcc-windows-base",
+            "hidden": true,
+            "configurePreset": "gcc-windows-base"
+        },
+        {
+            "name": "gcc-x64-debug",
+            "displayName": "GCC x64 Debug",
+            "configurePreset": "gcc-x64-debug"
+        },
+        {
+            "name": "gcc-x64-release",
+            "displayName": "GCC x64 Release",
+            "configurePreset": "gcc-x64-release"
+        }
+    ],
+    "testPresets": [
+        {
+            "name": "Unit Tests (msvc)",
+            "description": "",
+            "displayName": "",
+            "configurePreset": "msvc-x64-debug"
+        },
+        {
+            "name": "Unit Tests (gcc)",
+            "description": "",
+            "displayName": "",
+            "configurePreset": "gcc-x64-debug"
+        }
+    ]
+}

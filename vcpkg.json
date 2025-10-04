@@ -1,0 +1,10 @@
+{
+  "name": "muehle",
+  "version": "1.0.0",
+  "dependencies": [
+    "gtest",
+    "directxtk",
+    "easyloggingpp"
+  ],
+  "builtin-baseline": "94f44ef0f92cdc3630ae7a089fa4097746aef5ea"
+}
